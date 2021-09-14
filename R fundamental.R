@@ -1,0 +1,44 @@
+#Ini latihan R saya
+
+#menulis hellow world
+"Hello World"
+
+3+3
+
+#vector
+angka <- c(1:10)
+print(angka)
+
+#index vector dengan accesor
+print(angka[3])
+
+#vector dengan teks
+nama_karyawan <- c("agus", "jupri", "santiago")
+print(nama_karyawan)
+print(nama_karyawan[2])
+
+#named vector
+nilai <- c( matematika = 80, fisika = 75, biologi = 90)
+print(nilai)
+print(nilai[2])
+
+#mengambil nilai pada vector
+print(nilai["matematika"])
+print(nilai[2:3])
+
+profil <- c(nama = "Bambang", pendidikan = "S1", pekerjaan = "data analyst", 
+            umur = 30)
+print(profil)
+print(profil["nama"])
+
+#list
+list_random <- list(2, 500, "Sandy", 90)
+print(list_random)
+
+#list dengan nama=nilai
+kota <- list(nama_kota= "Malang", propinsi= "Jawa Timur", luas_wilayah= 200)
+print(kota)
+
+
+
+
