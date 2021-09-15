@@ -5,7 +5,7 @@
 
 3+3
 
-#vector
+#VECTOR
 angka <- c(1:10)
 print(angka)
 
@@ -31,13 +31,44 @@ profil <- c(nama = "Bambang", pendidikan = "S1", pekerjaan = "data analyst",
 print(profil)
 print(profil["nama"])
 
-#list
+#LIST
+#contoh LIST
 list_random <- list(2, 500, "Sandy", 90)
 print(list_random)
 
 #list dengan nama=nilai
 kota <- list(nama_kota= "Malang", propinsi= "Jawa Timur", luas_wilayah= 200)
-print(kota)
+kota
+
+#list index
+list_random[2]
+list_random[2:3]
+list_random[[3]]
+
+#DATA FRAME
+#Membuat dua variable vector
+fakultas <- c("Bisnis", "D3 Perhotelan", "ICT", "Ilmu Komunikasi", "Seni dan Desain")
+jumlah_mahasiswa <- c(260, 28, 284, 465, 735)
+
+#Membuat data frame dari kedua vector di atas
+info_mahasiswa <- data.frame(fakultas, jumlah_mahasiswa)
+
+#Melihat isi data frame
+info_mahasiswa
+
+#Buat vector baru sebagai representasi akreditasi
+akreditasi <- c("A","A","B","A","A")
+
+#Buat data frame dari ketiga vector di atas
+info_mahasiswa <- data.frame(fakultas, jumlah_mahasiswa, akreditasi)
+info_mahasiswa
+
+#Cara akses data frame
+info_mahasiswa$fakultas
+
+
+
+
 
 
 
